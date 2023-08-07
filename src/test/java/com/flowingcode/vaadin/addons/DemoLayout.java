@@ -1,6 +1,6 @@
 /*-
  * #%L
- * Template Add-on
+ * Flip Card Add-on
  * %%
  * Copyright (C) 2023 Flowing Code
  * %%

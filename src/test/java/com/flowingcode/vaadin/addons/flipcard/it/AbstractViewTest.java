@@ -1,6 +1,6 @@
 /*-
  * #%L
- * Template Add-on
+ * Flip Card Add-on
  * %%
  * Copyright (C) 2023 Flowing Code
  * %%
@@ -18,7 +18,7 @@
  * #L%
  */
 
-package com.flowingcode.vaadin.addons.template.it;
+package com.flowingcode.vaadin.addons.flipcard.it;
 
 import com.vaadin.testbench.ScreenshotOnFailureRule;
 import com.vaadin.testbench.TestBench;

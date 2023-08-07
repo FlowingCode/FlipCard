@@ -1,6 +1,6 @@
 /*-
  * #%L
- * Template Add-on
+ * Flip Card Add-on
  * %%
  * Copyright (C) 2023 Flowing Code
  * %%
@@ -17,16 +17,17 @@
  * limitations under the License.
  * #L%
  */
-package com.flowingcode.vaadin.addons.template.test;
+package com.flowingcode.vaadin.addons.flipcard.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import com.flowingcode.vaadin.addons.template.TemplateAddon;
 import org.junit.Assert;
 import org.junit.Test;
+import com.flowingcode.vaadin.addons.flipcard.FlipCard;
+import com.vaadin.flow.component.html.Div;
 
 public class SerializationTest {
 
@@ -43,7 +44,9 @@ public class SerializationTest {
   @Test
   public void testSerialization() throws ClassNotFoundException, IOException {
     try {
-      testSerializationOf(new TemplateAddon());
+      Div comp1 = new Div();
+      Div comp2 = new Div();
+      testSerializationOf(new FlipCard(comp1, comp2));
     } catch (Exception e) {
       Assert.fail("Problem while testing serialization: " + e.getMessage());
     }

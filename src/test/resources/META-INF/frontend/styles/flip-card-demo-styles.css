@@ -1,0 +1,74 @@
+/*-
+ * #%L
+ * Flip Card Add-on
+ * %%
+ * Copyright (C) 2023 Flowing Code
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+ 
+.flip-card-basic {
+    margin: 60px auto;
+    width: 500px;
+    --flip-card-height: 300px;
+	--flip-card-transition-duration: 1000ms;
+	--flip-card-border-radius: 20px;
+	--flip-card-box-shadow: none;
+	--flip-card-background-color-front: #009800;
+	--flip-card-background-color-back: #009800;
+}
+
+.flip-card-basic vaadin-icon {
+	width: 5rem;
+	height: 5rem;
+	color: white;
+}
+
+.flip-card-basic .front-card, .flip-card-basic .back-card {
+	width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.flip-card-basic .front-card span, .flip-card-basic .back-card span {
+	color: white;
+	font-size: 18px;
+}
+
+.flip-card-info-card {
+    margin: 60px auto;
+    width: 600px;
+    --flip-card-height: 400px;
+	--flip-card-transition-duration: 1500ms;
+	--flip-card-border-radius: 0;
+	--flip-card-box-shadow: none;
+	--flip-card-background-color-front: white;
+	--flip-card-background-color-back: #f8f8f8;
+}
+
+.flip-card-info-card .front-card, .flip-card-info-card .back-card {
+	width: 540px;
+    height: 400px;
+}
+
+.flip-card-info-card .back-card { 
+	padding: 30px;
+}
+
+.flip-card-info-card .back-card h4 {
+	padding-bottom: 15px;
+}
