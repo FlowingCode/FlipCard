@@ -1,6 +1,6 @@
 /*-
  * #%L
- * Template Add-on
+ * Flip Card Add-on
  * %%
  * Copyright (C) 2023 Flowing Code
  * %%
@@ -18,7 +18,7 @@
  * #L%
  */
 
-package com.flowingcode.vaadin.addons.template.it;
+package com.flowingcode.vaadin.addons.flipcard.it;
 
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
@@ -57,7 +57,7 @@ public class ViewIT extends AbstractViewTest {
 
   @Test
   public void componentWorks() {
-    TestBenchElement element = $("paper-input").first();
+    TestBenchElement element = $("flip-card").first();
     assertThat(element, hasBeenUpgradedToCustomElement);
   }
 }

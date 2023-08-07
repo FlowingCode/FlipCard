@@ -1,22 +1,36 @@
-[![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/template-addon)
-[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/app-layout-addon.svg)](https://vaadin.com/directory/component/template-addon)
-[![Build Status](https://jenkins.flowingcode.com/job/template-addon/badge/icon)](https://jenkins.flowingcode.com/job/template-addon)
+[![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/flip-card-addon)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/flip-card--addon.svg)](https://vaadin.com/directory/component/flip-card-addon)
+[![Build Status](https://jenkins.flowingcode.com/job/FlipCard-addon/badge/icon)](https://jenkins.flowingcode.com/job/FlipCard-addon)
 
-# Template Add-on
+# Flip Card Add-on
 
-This is a template project for building new Vaadin 24 add-ons
+Wrapper component for [Flip Card Web Component](https://www.npmjs.com/package/flip-card-wc).
 
 ## Features
 
-* List the features of your add-on in here
+* Card component can flip on hover or on click
+* Styling can be overriden through CSS variables
+
+### Styling
+
+The Flip Card Web Component includes CSS variables that help style the component. Below are the `default` values:
+```css
+--flip-card-height: 100px;
+--flip-card-transition-duration: 800ms;
+--flip-card-border-radius: 4px;
+--flip-card-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+--flip-card-background-color-front: white;
+--flip-card-background-color-back: white;
+--flip-card-transition-timing-function: ease;
+```
 
 ## Online demo
 
-[Online demo here](http://addonsv24.flowingcode.com/template)
+[Online demo here](http://addonsv24.flowingcode.com/flipcard)
 
 ## Download release
 
-[Available in Vaadin Directory](https://vaadin.com/directory/component/template-addon)
+[Available in Vaadin Directory](https://vaadin.com/directory/component/flip-card-addon)
 
 ### Maven install
 
@@ -25,7 +39,7 @@ Add the following dependencies in your pom.xml file:
 ```xml
 <dependency>
    <groupId>org.vaadin.addons.flowingcode</groupId>
-   <artifactId>template-addon</artifactId>
+   <artifactId>flip-card-addon</artifactId>
    <version>X.Y.Z</version>
 </dependency>
 ```
@@ -49,7 +63,7 @@ To see the demo, navigate to http://localhost:8080/
 
 ## Release notes
 
-See [here](https://github.com/FlowingCode/TemplateAddon/releases)
+See [here](https://github.com/FlowingCode/FlipCard/releases)
 
 ## Issue tracking
 
@@ -74,7 +88,7 @@ Then, follow these steps for creating a contibution:
 
 This add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-TEMPLATE_ADDON is written by Flowing Code S.A.
+Flip Card Add-on is written by Flowing Code S.A.
 
 # Developer Guide
 
