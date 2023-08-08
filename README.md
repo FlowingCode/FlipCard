@@ -94,7 +94,16 @@ Flip Card Add-on is written by Flowing Code S.A.
 
 ## Getting started
 
-Add your code samples in this section
+Basic example: 
+```java
+FlipCard onHoverFlipCard = new FlipCard(new Span("front side"), new Span("back side"));
+add(onHoverFlipCard);
+
+FlipCard onClickFlipCard = new FlipCard(new Span("front side"), new Span("back side"), FlipCardVariant.CLICK);
+add(onClickFlipCard);
+```
+
+More examples [here](https://github.com/FlowingCode/FlipCard/blob/initial-implementation/src/test/java/com/flowingcode/vaadin/addons/flipcard/FlipCardDemoView.java). 
 
 ## Special configuration when using Spring
 
