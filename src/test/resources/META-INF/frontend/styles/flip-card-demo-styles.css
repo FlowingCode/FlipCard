@@ -19,9 +19,9 @@
  */
  
 .flip-card-basic {
-    margin: 60px auto;
-    width: 500px;
-    --flip-card-height: 300px;
+	margin: 60px auto;
+	width: 500px;
+	--flip-card-height: 300px;
 	--flip-card-transition-duration: 1000ms;
 	--flip-card-border-radius: 20px;
 	--flip-card-box-shadow: none;
@@ -37,11 +37,11 @@
 
 .flip-card-basic .front-card, .flip-card-basic .back-card {
 	width: 500px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
 }
 
 .flip-card-basic .front-card span, .flip-card-basic .back-card span {
@@ -50,9 +50,9 @@
 }
 
 .flip-card-info-card {
-    margin: 60px auto;
-    width: 600px;
-    --flip-card-height: 400px;
+	margin: 60px auto;
+	width: 600px;
+	--flip-card-height: 400px;
 	--flip-card-transition-duration: 1500ms;
 	--flip-card-border-radius: 0;
 	--flip-card-box-shadow: none;
@@ -62,7 +62,7 @@
 
 .flip-card-info-card .front-card, .flip-card-info-card .back-card {
 	width: 540px;
-    height: 400px;
+	height: 400px;
 }
 
 .flip-card-info-card .back-card { 
