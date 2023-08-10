@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -28,12 +28,13 @@ import com.vaadin.flow.dom.Element;
 
 /**
  * Representation of a Flip Card component.
- * 
+ *
+ * <p>
  * This component is a wrapper for Flip Card Web Component
  * (https://www.npmjs.com/package/flip-card-wc)
- * 
+ * </p>
+ *
  * @author Paola De Bartolo / Flowing Code
- * 
  */
 @SuppressWarnings("serial")
 @NpmPackage(value = "flip-card-wc", version = "1.3.0")
@@ -42,7 +43,8 @@ import com.vaadin.flow.dom.Element;
 public class FlipCard extends Div {
 
   public enum FlipCardVariant {
-    HOVER, CLICK;
+    HOVER,
+    CLICK;
   }
 
   public FlipCard(Component frontComponent, Component backComponent) {
@@ -57,7 +59,7 @@ public class FlipCard extends Div {
 
   /**
    * Sets the mechanism of how the card flips.
-   * 
+   *
    * @param variant the variant type that specifies the flip behavior of the card
    */
   public void setVariant(FlipCardVariant variant) {
@@ -66,7 +68,7 @@ public class FlipCard extends Div {
 
   /**
    * Returns the variant value that represents the current flip behavior of the card.
-   * 
+   *
    * @return the current variant value
    */
   public FlipCardVariant getVariant() {
@@ -76,7 +78,7 @@ public class FlipCard extends Div {
 
   /**
    * Sets the component that will be display on the front side of the card.
-   * 
+   *
    * @param component the front side component
    */
   public void setFrontComponent(Component component) {
@@ -87,7 +89,7 @@ public class FlipCard extends Div {
 
   /**
    * Sets the component that will be display on the back side of the card.
-   * 
+   *
    * @param component the back side component
    */
   public void setBackComponent(Component component) {
@@ -95,5 +97,4 @@ public class FlipCard extends Div {
     backElement.setAttribute("slot", "back");
     this.getElement().appendChild(backElement);
   }
-
 }
