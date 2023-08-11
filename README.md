@@ -26,7 +26,7 @@ The Flip Card Web Component includes CSS variables that help style the component
 
 ## Online demo
 
-[Online demo here](http://addonsv24.flowingcode.com/flipcard)
+[Online demo here](http://addonsv24.flowingcode.com/flip-card)
 
 ## Download release
 
