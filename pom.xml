@@ -4,7 +4,7 @@
 
 	<groupId>org.vaadin.addons.flowingcode</groupId>
 	<artifactId>flip-card-addon</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>Flip Card Add-on</name>
 	<description>Flip Card Add-on for Vaadin Flow</description>
 
@@ -39,7 +39,7 @@
 		<url>https://github.com/FlowingCode/FlipCard</url>
 		<connection>scm:git:git://github.com/FlowingCode/FlipCard.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:/FlowingCode/FlipCard.git</developerConnection>
-		<tag>1.0.0</tag>
+		<tag>master</tag>
 	</scm>
 
         <developers>
