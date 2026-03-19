@@ -25,6 +25,10 @@ The Flip Card Web Component includes CSS variables that help style the component
 --flip-card-transition-timing-function: ease;
 ```
 
+## Supported versions
+
+Supported versions: Vaadin 24-25 (add-on version 1.x)
+
 ## Online demo
 
 [Online demo here](http://addonsv24.flowingcode.com/flip-card)
