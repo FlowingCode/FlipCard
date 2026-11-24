@@ -1,6 +1,7 @@
 [![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/flip-card-add-on)
 [![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/flip-card-add-on.svg)](https://vaadin.com/directory/component/flip-card-add-on)
 [![Build Status](https://jenkins.flowingcode.com/job/FlipCard-addon/badge/icon)](https://jenkins.flowingcode.com/job/FlipCard-addon)
+[![Vaadin Directory](https://img.shields.io/vaadin-directory/v/flip-card-add-on)](https://vaadin.com/directory/component/flip-card-add-on)
 [![Javadoc](https://img.shields.io/badge/javadoc-00b4f0)](https://javadoc.flowingcode.com/artifact/org.vaadin.addons.flowingcode/flip-card-addon)
 
 # Flip Card Add-on
@@ -127,10 +128,12 @@ More examples [here](https://github.com/FlowingCode/FlipCard/blob/initial-implem
 
 ## Special configuration when using Spring
 
-By default, Vaadin Flow only includes ```com/vaadin/flow/component``` to be always scanned for UI components and views. For this reason, the addon might need to be whitelisted in order to display correctly. 
+By default, Vaadin Flow only includes `com/vaadin/flow/component` to be always scanned for UI components and views. For this reason, the add-on might need to be allowed in order to display correctly. 
 
-To do so, just add ```com.flowingcode``` to the ```vaadin.whitelisted-packages``` property in ```src/main/resources/application.properties```, like:
+To do so, just add `com.flowingcode` to the `vaadin.allowed-packages` property in `src/main/resources/application.properties`, like:
 
-```vaadin.whitelisted-packages = com.vaadin,org.vaadin,dev.hilla,com.flowingcode```
+```
+vaadin.allowed-packages = com.vaadin,org.vaadin,dev.hilla,com.flowingcode
+```
  
-More information on Spring whitelisted configuration [here](https://vaadin.com/docs/latest/integrations/spring/configuration/#configure-the-scanning-of-packages).
+More information on Spring scanning configuration [here](https://vaadin.com/docs/latest/integrations/spring/configuration/#configure-the-scanning-of-packages).
